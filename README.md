@@ -24,6 +24,8 @@ As a visual designer based in Vancouver, I reimagined the festival's digital pre
 
 * Responsive Design: Fully optimized for mobile, tablet, and desktop views.
 
+  
+
 Created as a personal portfolio project by Gahui Kim.
 
 Disclaimer: This project is a creative redesign and is not officially affiliated with the Vancouver Cherry Blossom Festival.
