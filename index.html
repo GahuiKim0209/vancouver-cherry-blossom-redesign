@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blossoms After Dark — Vancouver Cherry Blossom Festival</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">VCBF</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#lounge">Lounge</a></li>
+    <li><a href="#vendors">Vendors</a></li>
+    <li><a href="#location">Location</a></li>
+  </ul>
+  <a href="#" class="nav-cta">Free Event</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-glow"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(8,6,8,0.97) 0%, rgba(8,6,8,0.65) 40%, rgba(8,6,8,0.25) 70%, rgba(8,6,8,0.45) 100%);z-index:1;pointer-events:none;"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,6,8,0.5) 0%,transparent 60%);z-index:1;pointer-events:none;"></div>
+  <canvas id="petalCanvas"></canvas>
+
+  <div class="hero-content" style="position:relative;z-index:3;">
+    <div class="hero-tag">Vancouver Cherry Blossom Festival</div>
+    <div class="hero-date">March 27–28, 2026 · David Lam Park</div>
+    <h1 class="hero-title">
+      Blossoms<br>
+      <em>After Dark</em>
+    </h1>
+    <p class="hero-sub">A magical promenade through illuminated cherry blossoms. Performers, food, and wonder await around every corner.</p>
+    <div class="hero-actions">
+      <a href="#schedule" class="btn-glow">View Schedule</a>
+      <a href="#location" class="btn-ghost">Get Directions</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll" style="z-index:3;">
+    <div class="scroll-bar"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- BADGE STRIP -->
+<div class="badge-strip">
+  <div class="badge">
+    <div class="badge-icon">🌸</div>
+    <div class="badge-text">
+      <strong>Free Entry</strong>
+      <span>No ticket required</span>
+    </div>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <div class="badge-icon">🌙</div>
+    <div class="badge-text">
+      <strong>Night Event</strong>
+      <span>Illuminated blossoms</span>
+    </div>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <div class="badge-icon">🎭</div>
+    <div class="badge-text">
+      <strong>Live Performers</strong>
+      <span>Music · Art · Dance</span>
+    </div>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <div class="badge-icon">🍜</div>
+    <div class="badge-text">
+      <strong>Food Trucks</strong>
+      <span>20+ vendors</span>
+    </div>
+  </div>
+  <div class="badge-sep"></div>
+  <div class="badge">
+    <div class="badge-icon">📸</div>
+    <div class="badge-text">
+      <strong>Photo Ops</strong>
+      <span>Canopies of blossoms</span>
+    </div>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="reveal">
+    <div class="s-label">About the Event</div>
+    <h2 class="s-title">Where <em>night</em><br>meets nature</h2>
+    <div class="about-body">
+      <p>Step into an enchanted world where cherry blossoms glow under the night sky at David Lam Park. <strong>Blossoms After Dark</strong> transforms Vancouver's most beloved spring landmark into an immersive evening experience.</p>
+      <br>
+      <p>Wander through illuminated canopies, discover <strong>surprise performers</strong> around every bend, feast from a curated lineup of food trucks, and create lasting memories beneath a sky of pink petals.</p>
+      <div class="about-highlight">
+        <p>"You never know what surprise will lay around each corner."</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="reveal" style="transition-delay:.15s">
+    <div class="about-visual" style="aspect-ratio:4/3;border-radius:0;">
+      <img src="img/about-crowd.jpg"
+           alt="Blossoms After Dark — illuminated cherry blossoms at David Lam Park"
+           style="width:100%;height:100%;object-fit:cover;object-position:center 45%;display:block;"/>
+      <div class="about-photo-label">Photo Credits: Lung Liu · David Lam Park, Vancouver BC</div>
+    </div>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="schedule-section" id="schedule">
+  <div class="reveal">
+    <div class="s-label">Event Schedule</div>
+    <h2 class="s-title">Two nights<br>of <em>magic</em></h2>
+  </div>
+
+  <div class="schedule-grid">
+    <div class="sched-card reveal featured">
+      <div class="sched-day">Friday · March 27</div>
+      <div class="sched-time">6:30 – 10PM</div>
+      <div class="sched-desc">Opening night promenade through illuminated cherry blossoms. Live performances, food trucks, and interactive art installations light up David Lam Park.</div>
+      <div class="sched-tags">
+        <span class="tag">Opening Night</span>
+        <span class="tag">Live Music</span>
+        <span class="tag">Food Trucks</span>
+      </div>
+    </div>
+
+    <div class="sched-card reveal featured" style="transition-delay:.1s">
+      <div class="sched-day">Sunday · March 29</div>
+      <div class="sched-time">12 – 10PM</div>
+      <div class="sched-desc">A full day of festivities culminating in a spectacular evening under the blossoms. Extended hours to take in every moment of the illuminated park.</div>
+      <div class="sched-tags">
+        <span class="tag">All Day</span>
+        <span class="tag">Workshops</span>
+        <span class="tag">Closing Night</span>
+      </div>
+    </div>
+
+    <div class="sched-card reveal" style="transition-delay:.15s">
+      <div class="sched-day">Saturday · March 28</div>
+      <div class="sched-time">4:15 – 7:30PM</div>
+      <div class="sched-desc">Piano Karaoke with <strong style="color:var(--white)">Eddie Lam & The Naturals</strong> — an unforgettable sing-along under the blossoms.</div>
+      <div class="sched-tags">
+        <span class="tag">Piano Karaoke</span>
+        <span class="tag">Eddie Lam</span>
+      </div>
+    </div>
+
+    <div class="sched-card reveal" style="transition-delay:.2s">
+      <div class="sched-day">Friday · March 27</div>
+      <div class="sched-time">Young Artists</div>
+      <div class="sched-desc"><strong style="color:var(--white)">Nishi Praveen Kumar</strong> leads a Glow-in-the-Dark Spirograph workshop — hands-on arts for all ages.</div>
+      <div class="sched-tags">
+        <span class="tag">Art Workshop</span>
+        <span class="tag">All Ages</span>
+        <span class="tag">Free</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOUNGE -->
+<section class="lounge-section" id="lounge">
+  <div class="lounge-visual reveal" style="aspect-ratio:1/1;border:1px solid var(--border);overflow:hidden;background:var(--black2);">
+    <img src="img/lounge-cocktail.jpg"
+         alt="Cherry blossom cocktail at night — Blossom Lounge Bar"
+         style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;"/>
+  </div>
+
+  <div class="reveal" style="transition-delay:.1s">
+    <span class="age-badge">19+ · Blossom Lounge Bar</span>
+    <div class="s-label">Lounge &amp; Drinks</div>
+    <h2 class="s-title">Drink under<br>the <em>blossoms</em></h2>
+    <p style="font-size:16px;font-weight:300;color:var(--muted);line-height:1.8;margin-bottom:8px;">
+      Experience live performances and craft cocktails at the <strong style="color:var(--white)">Blossom Lounge Bar</strong>. Sip, sway, and savour the night beneath a canopy of cherry blossoms.
+    </p>
+
+    <div class="lounge-times">
+      <div class="lounge-time-row">
+        <div>
+          <div class="lt-day">Friday, March 27</div>
+          <div class="lt-note">Opening night</div>
+        </div>
+        <div class="lt-time">6:30 – 10PM</div>
+      </div>
+      <div class="lounge-time-row">
+        <div>
+          <div class="lt-day">Saturday, March 28</div>
+          <div class="lt-note">Piano Karaoke · Eddie Lam &amp; The Naturals</div>
+        </div>
+        <div class="lt-time">4:15 – 7:30PM</div>
+      </div>
+      <div class="lounge-time-row">
+        <div>
+          <div class="lt-day">Sunday, March 29</div>
+          <div class="lt-note">Closing day</div>
+        </div>
+        <div class="lt-time">12 – 10PM</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENDORS -->
+<section class="vendors-section" id="vendors">
+  <div class="reveal">
+    <div class="s-label">Marketplace</div>
+    <h2 class="s-title">Artisans &amp;<br><em>Flavours</em></h2>
+  </div>
+
+  <div class="vendor-tabs reveal">
+    <button class="vtab active" onclick="switchTab(this,'food')">🍜 Food Vendors</button>
+    <button class="vtab" onclick="switchTab(this,'artisan')">🎨 Artisan &amp; Retail</button>
+  </div>
+
+  <div class="vendor-panel active" id="food">
+    <div class="vendor-list reveal">
+      <a href="https://www.antojosysabores.com/" class="vendor-chip" target="_blank">Antojos y Sabores Mexican Cuisine</a>
+      <a href="https://www.thenem.net/" class="vendor-chip" target="_blank">Authentic Vietnamese Spring Rolls</a>
+      <a href="https://bretonnevancouver.ca/" class="vendor-chip" target="_blank">Bretonne Creperie</a>
+      <a href="https://chaiwagon.com/" class="vendor-chip" target="_blank">Chai Wagon</a>
+      <a href="https://www.tornadopotatobc.com/" class="vendor-chip" target="_blank">Tornado Potato</a>
+      <a href="https://coffeebike.ca/" class="vendor-chip" target="_blank">Coffee Bike</a>
+      <a href="https://www.discocheetah.com/" class="vendor-chip" target="_blank">Disco Cheetah</a>
+      <a href="https://www.instagram.com/garyskettlecorn" class="vendor-chip" target="_blank">Gary's Kettle Corn</a>
+      <a href="https://houseofyee.ca/" class="vendor-chip" target="_blank">House of Yee Fine Foods</a>
+      <a href="https://www.jadeleafmatcha.com/" class="vendor-chip" target="_blank">Jade Leaf Matcha</a>
+      <a href="https://japadog.com/" class="vendor-chip" target="_blank">JAPADOG</a>
+      <a href="https://magicalrings.ca/" class="vendor-chip" target="_blank">Magical Rings Mini Donut</a>
+      <a href="https://www.taconori.com/" class="vendor-chip" target="_blank">Taco Nori</a>
+      <a href="https://tokyo-katsusand.square.site/" class="vendor-chip" target="_blank">Tokyo Katsu-sand</a>
+      <a href="https://toastbento.wixsite.com/stackersyvr" class="vendor-chip" target="_blank">Stackers Burger</a>
+      <a href="https://yvrcookie.com/" class="vendor-chip" target="_blank">YVR Cookie</a>
+      <a href="https://www.wabagel.com/" class="vendor-chip" target="_blank">WA-BAGEL by ABURI</a>
+      <a href="#" class="vendor-chip">Rolling Joe Coffee Truck</a>
+      <a href="#" class="vendor-chip">Pop Culture Dirty Soda</a>
+      <a href="#" class="vendor-chip">The Great Canadian Cotton Candy</a>
+      <a href="#" class="vendor-chip">Japan Rice Bowl Assoc.</a>
+    </div>
+  </div>
+
+  <div class="vendor-panel" id="artisan">
+    <div class="vendor-list reveal">
+      <a href="https://www.instagram.com/madebyamichi" class="vendor-chip" target="_blank">Amichi Studio</a>
+      <a href="https://www.artsycandle.com/" class="vendor-chip" target="_blank">Artsy Candle Co.</a>
+      <a href="https://www.facebook.com/BETTERHOME1367" class="vendor-chip" target="_blank">Better Home Decoration &amp; Gift</a>
+      <a href="https://www.instagram.com/blue.deer3" class="vendor-chip" target="_blank">Blue Deer</a>
+      <a href="https://www.cherylstradingpost.com/" class="vendor-chip" target="_blank">Cheryl's Trading Post</a>
+      <a href="https://chuchu.ca/" class="vendor-chip" target="_blank">Chu Chu</a>
+      <a href="https://www.cursiveandprints.com/" class="vendor-chip" target="_blank">Cursive and Prints</a>
+      <a href="https://mjsknotsandloops.square.site/" class="vendor-chip" target="_blank">MJ's Knots &amp; Loops</a>
+      <a href="https://www.mysgreen.com/" class="vendor-chip" target="_blank">Mysgreen</a>
+      <a href="https://www.runzie.ca/" class="vendor-chip" target="_blank">Runzie</a>
+      <a href="https://shinebyilluminatedesigns.com/" class="vendor-chip" target="_blank">SHINE by Illuminate Designs</a>
+      <a href="https://fashionoise.com/" class="vendor-chip" target="_blank">Fashionoise Collections</a>
+      <a href="#" class="vendor-chip">23 Pieces Fashions</a>
+      <a href="#" class="vendor-chip">DIY DECOS BY JOJO</a>
+    </div>
+  </div>
+</section>
+
+<!-- GETTING THERE -->
+<section class="transport-section" id="transport">
+  <div class="reveal">
+    <div class="s-label">Getting There</div>
+    <h2 class="s-title">Find your <em>way</em></h2>
+    <p style="font-size:15px;color:var(--muted);margin-top:12px;">Parking is limited — we encourage sustainable transport options.</p>
+  </div>
+
+  <div class="transport-grid">
+    <div class="transport-card reveal">
+      <span class="t-icon">🚆</span>
+      <div class="t-name">SkyTrain</div>
+      <div class="t-desc">Exit Yaletown–Roundhouse Station. Head southeast on Davie St, turn left on Pacific Blvd — approximately 4–7 minutes on foot.</div>
+      <a href="https://www.translink.ca/" class="t-link" target="_blank">Translink schedules →</a>
+    </div>
+    <div class="transport-card reveal" style="transition-delay:.08s">
+      <span class="t-icon">🚌</span>
+      <div class="t-name">Bus</div>
+      <div class="t-desc">Several routes service the Yaletown and False Creek area with stops along Pacific Blvd. Short walk to David Lam Park from there.</div>
+      <a href="https://www.translink.ca/" class="t-link" target="_blank">Translink routes →</a>
+    </div>
+    <div class="transport-card reveal" style="transition-delay:.16s">
+      <span class="t-icon">⛴️</span>
+      <div class="t-name">False Creek Ferry</div>
+      <div class="t-desc">Granville Island's original little blue ferries — fast, frequent, and friendly service right to David Lam Park all weekend.</div>
+      <a href="http://www.granvilleislandferries.bc.ca" class="t-link" target="_blank">Ferry schedule →</a>
+    </div>
+    <div class="transport-card reveal" style="transition-delay:.04s">
+      <span class="t-icon">⛴️</span>
+      <div class="t-name">Aquabus</div>
+      <div class="t-desc">Enjoy a scenic False Creek ride with stops located near David Lam Park. A charming way to arrive in style.</div>
+      <a href="https://theaquabus.com/" class="t-link" target="_blank">Aquabus info →</a>
+    </div>
+    <div class="transport-card reveal" style="transition-delay:.12s">
+      <span class="t-icon">🛴</span>
+      <div class="t-name">Lime Scooter</div>
+      <div class="t-desc">Ride in with Lime and get 30% off your trip to the festival with exclusive discount code.</div>
+      <div style="margin-top:14px;display:inline-flex;align-items:center;gap:8px;background:var(--pink-dim);border:1px solid var(--border);padding:7px 14px;">
+        <span style="font-size:11px;color:var(--muted);">Code:</span>
+        <strong style="color:var(--pink);font-size:13px;letter-spacing:.1em;">BLOSSOM2026</strong>
+      </div>
+    </div>
+    <div class="transport-card reveal" style="transition-delay:.2s">
+      <span class="t-icon">🚶</span>
+      <div class="t-name">Walk or Bike</div>
+      <div class="t-desc">David Lam Park is easily accessible via the Seawall and nearby bike routes. Perfect for a spring evening stroll.</div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="location-section" id="location">
+  <div class="reveal">
+    <div class="s-label">Location</div>
+    <h2 class="s-title">David Lam<br><em>Park</em></h2>
+
+    <div class="location-info" style="margin-top:36px;">
+      <div class="loc-item">
+        <div class="loc-label">Address</div>
+        <div class="loc-value">1300 Pacific Blvd</div>
+        <div class="loc-sub">Vancouver, BC V6Z 2Y1</div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-label">Dates</div>
+        <div class="loc-value">March 27–28, 2026</div>
+        <div class="loc-sub">Rain or shine — outdoor event</div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-label">Admission</div>
+        <div class="loc-value" style="color:var(--pink);">Free — No ticket required</div>
+        <div class="loc-sub">19+ section requires valid ID</div>
+      </div>
+      <div class="loc-item">
+        <div class="loc-label">Nearest Transit</div>
+        <div class="loc-value">Yaletown–Roundhouse Station</div>
+        <div class="loc-sub">Canada Line · 5 min walk</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="map-frame reveal" style="transition-delay:.15s;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.7!2d-123.1270!3d49.2735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673e6a1dc2d21%3A0xe1e5d8c43a3d6f9b!2sDavid+Lam+Park!5e0!3m2!1sen!2sca!4v1"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      style="width:100%;height:100%;border:0;filter:invert(90%) hue-rotate(180deg) saturate(.8);opacity:.75;">
+    </iframe>
+  </div>
+</section>
+
+<!-- HOTEL STRIP -->
+<div class="hotel-strip">
+  <div class="hotel-left">
+    <div class="hotel-eyebrow">Partner Offer</div>
+    <div class="hotel-title">Stay at Smithe House</div>
+    <div class="hotel-sub">Preferred rate of $250/night · March 27–29, 2026</div>
+    <div class="hotel-code">
+      <span>Booking code:</span>
+      <strong>CHERRYBLOSSOM</strong>
+    </div>
+  </div>
+  <a href="https://smithehouse.com/" class="btn-glow" target="_blank" style="flex-shrink:0;">
+    Book Now
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+</div>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="gallery">
+  <div class="reveal">
+    <div class="s-label">Gallery</div>
+    <h2 class="s-title">Moments<br>from <em>past years</em></h2>
+    <p style="font-size:13px;color:var(--muted);margin-top:12px;">Photo Credits: Lung Liu</p>
+  </div>
+
+    <div class="pg-grid">
+    <div class="gi gi gi-big" data-idx="0" onclick="openLightbox(0)">
+      <div class="gi-img" style="background-image:url('img/gallery-blossoms-after-dark-crowd.jpg')"></div>
+      <div class="gi-overlay">
+        <span class="gi-label">Blossoms After Dark Crowd</span>
+        <svg class="gi-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+    <div class="gi gi gi-tr" data-idx="1" onclick="openLightbox(1)">
+      <div class="gi-img" style="background-image:url('img/gallery-led-ring-performer.jpg')"></div>
+      <div class="gi-overlay">
+        <span class="gi-label">LED Ring Performer</span>
+        <svg class="gi-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+    <div class="gi gi gi-mr" data-idx="2" onclick="openLightbox(2)">
+      <div class="gi-img" style="background-image:url('img/gallery-fairy-performer.jpg')"></div>
+      <div class="gi-overlay">
+        <span class="gi-label">Fairy Performer</span>
+        <svg class="gi-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+    <div class="gi gi gi-bl" data-idx="3" onclick="openLightbox(3)">
+      <div class="gi-img" style="background-image:url('img/gallery-lantern-discovery.jpg')"></div>
+      <div class="gi-overlay">
+        <span class="gi-label">Lantern Discovery</span>
+        <svg class="gi-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+    <div class="gi gi gi-br" data-idx="4" onclick="openLightbox(4)">
+      <div class="gi-img" style="background-image:url('img/gallery-cherry-jam-stage.jpg')"></div>
+      <div class="gi-overlay">
+        <span class="gi-label">Cherry Jam Stage</span>
+        <svg class="gi-zoom" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lb" id="lb" onclick="closeLightbox(event)">
+    <button class="lb-close" onclick="closeLightbox()">&#x2715;</button>
+    <button class="lb-nav lb-prev" onclick="lbNav(-1,event)">&#8592;</button>
+    <button class="lb-nav lb-next" onclick="lbNav(1,event)">&#8594;</button>
+    <div class="lb-img-wrap">
+      <img id="lbImg" src="" alt="" class="lb-img"/>
+      <div class="lb-caption" id="lbCaption"></div>
+    </div>
+    <div class="lb-dots" id="lbDots">
+      <span class="lb-dot" onclick="setLbIdx(0,event)"></span><span class="lb-dot" onclick="setLbIdx(1,event)"></span><span class="lb-dot" onclick="setLbIdx(2,event)"></span><span class="lb-dot" onclick="setLbIdx(3,event)"></span><span class="lb-dot" onclick="setLbIdx(4,event)"></span>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo">Vancouver Cherry<br>Blossom Festival</div>
+      <p class="footer-tagline" style="margin-top:16px;">We acknowledge the traditional, ancestral, and unceded territories of the Musqueam, Squamish, and Tsleil-Waututh Nations.</p>
+    </div>
+    <div>
+      <div class="footer-col-title">Festival</div>
+      <ul class="footer-links">
+        <li><a href="#">Blossoms After Dark</a></li>
+        <li><a href="#">The Big Picnic</a></li>
+        <li><a href="#">Sakura Days Japan Fair</a></li>
+        <li><a href="#">Blossom Block Party</a></li>
+        <li><a href="#">Haiku Invitational</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Discover</div>
+      <ul class="footer-links">
+        <li><a href="#">Blossom Maps</a></li>
+        <li><a href="#">Blooming Now</a></li>
+        <li><a href="#">Cherry Cultivars</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Get Involved</div>
+      <ul class="footer-links">
+        <li><a href="#">Volunteer</a></li>
+        <li><a href="#">Donate</a></li>
+        <li><a href="#">Vendors</a></li>
+        <li><a href="#">Performers</a></li>
+        <li><a href="#">Sponsorships</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom" style="flex-direction:column;gap:12px;align-items:flex-start;">
+    <div style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;">
+      <span>© 2026 Vancouver Cherry Blossom Festival</span>
+      <div class="footer-social">
+        <a href="#" class="social-btn">ig</a>
+        <a href="#" class="social-btn">fb</a>
+        <a href="#" class="social-btn">tw</a>
+      </div>
+    </div>
+    <div style="width:100%;height:1px;background:var(--border);"></div>
+    <div style="width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+      <span style="font-size:11px;color:rgba(252,232,241,0.25);letter-spacing:.08em;">
+        This site was created as a personal portfolio project and is not affiliated with the official Vancouver Cherry Blossom Festival.
+      </span>
+      <span style="font-size:11px;color:rgba(252,232,241,0.3);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;">
+        © 2026 Gahui Kim
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
