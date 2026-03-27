@@ -22,7 +22,7 @@ body{
   cursor:none;
 }
 
-/* ── Cursor ── */
+/* Cursor */
 #cur{
   width:10px;height:10px;
   background:var(--pink);
@@ -41,7 +41,7 @@ body{
   mix-blend-mode:screen;
 }
 
-/* ── Nav ── */
+/* Nav */
 nav{
   position:fixed;top:0;left:0;right:0;
   z-index:200;
@@ -72,7 +72,7 @@ nav{
 }
 .nav-cta:hover{background:var(--pink-dim);border-color:var(--pink);}
 
-/* ── Hero ── */
+/* Hero */
 .hero{
   min-height:100vh;
   display:flex;flex-direction:column;
@@ -197,13 +197,13 @@ h1.hero-title em{
   50%{height:70px;opacity:.8;}
 }
 
-/* ── Divider ── */
+/* Divider */
 .divider{
   width:100%;height:1px;
   background:linear-gradient(to right,transparent,var(--border),transparent);
 }
 
-/* ── Free badge strip ── */
+/* Free badge strip */
 .badge-strip{
   background:var(--black2);
   padding:28px 64px;
@@ -232,7 +232,7 @@ h1.hero-title em{
 }
 .badge-sep{width:1px;height:44px;background:var(--border);}
 
-/* ── Sections common ── */
+/* Sections common */
 section{padding:100px 64px;overflow-x:clip;}
 .s-label{
   font-size:11px;letter-spacing:.22em;text-transform:uppercase;
@@ -249,7 +249,7 @@ section{padding:100px 64px;overflow-x:clip;}
 }
 .s-title em{font-style:italic;color:var(--pink);}
 
-/* ── About / Intro ── */
+/* About / Intro */
 .about-section{
   background:var(--black2);
   display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
@@ -289,7 +289,7 @@ section{padding:100px 64px;overflow-x:clip;}
   color:var(--muted);
 }
 
-/* ── Schedule ── */
+/* Schedule */
 .schedule-section{background:var(--black);}
 .schedule-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:2px;
@@ -338,7 +338,7 @@ section{padding:100px 64px;overflow-x:clip;}
 }
 .sched-card.featured .sched-time{color:var(--pink);}
 
-/* ── Lounge ── */
+/* Lounge */
 .lounge-section{
   background:var(--black3);
   display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
@@ -379,7 +379,7 @@ section{padding:100px 64px;overflow-x:clip;}
   border-radius:50px;margin-bottom:24px;
 }
 
-/* ── Vendors ── */
+/* Vendors */
 .vendors-section{background:var(--black);}
 .vendor-tabs{
   display:flex;gap:0;margin-bottom:48px;
@@ -414,7 +414,7 @@ section{padding:100px 64px;overflow-x:clip;}
   background:var(--pink-dim);
 }
 
-/* ── Getting there ── */
+/* Getting there */
 .transport-section{
   background:var(--black2);
 }
@@ -444,7 +444,7 @@ section{padding:100px 64px;overflow-x:clip;}
 }
 .t-link:hover{border-color:var(--pink);}
 
-/* ── Location ── */
+/* Location */
 .location-section{
   background:var(--black);
   display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;
@@ -479,7 +479,7 @@ section{padding:100px 64px;overflow-x:clip;}
 .loc-value{font-size:15px;color:var(--white);font-weight:400;}
 .loc-sub{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.5;}
 
-/* ── Hotel ── */
+/* Hotel */
 .hotel-strip{
   background:linear-gradient(to right,#14091a,#0e0612,#14091a);
   border-top:1px solid var(--border);
@@ -505,7 +505,7 @@ section{padding:100px 64px;overflow-x:clip;}
 .hotel-code span{font-size:12px;color:var(--muted);letter-spacing:.08em;}
 .hotel-code strong{color:var(--pink);font-size:14px;letter-spacing:.12em;text-transform:uppercase;}
 
-/* ── Gallery ── */
+/* Gallery */
 .gallery-section{background:var(--black3);overflow:hidden;}
 .gallery-grid{
   display:grid;
@@ -544,7 +544,7 @@ section{padding:100px 64px;overflow-x:clip;}
 .g-item:hover .g-overlay{opacity:1;}
 .g-credit{font-size:11px;color:var(--muted);letter-spacing:.1em;}
 
-/* ── Footer ── */
+/* Footer */
 footer{
   background:var(--black);
   border-top:1px solid var(--border);
@@ -592,14 +592,14 @@ footer{
 }
 .social-btn:hover{border-color:var(--pink);color:var(--pink);}
 
-/* ── Scroll reveal ── */
+/* Scroll reveal */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94);}
 .reveal.in{opacity:1;transform:translateY(0);}
 
-/* ── Keyframes ── */
+/* Keyframes */
 @keyframes fadeUp{from{opacity:0;transform:translateY(24px);}to{opacity:1;transform:translateY(0);}}
 
-/* ── Responsive ── */
+/* Responsive */
 @media(max-width:960px){
   nav{padding:20px 24px;}
   .nav-links{display:none;}
@@ -618,7 +618,7 @@ footer{
   .hero-scroll{display:none;}
 }
 
-/* ── Photo Grid ── */
+/* Photo Grid */
 .pg-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -683,7 +683,7 @@ footer{
   margin-left: 8px;
 }
 
-/* ── Lightbox ── */
+/* Lightbox */
 .lb {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -774,7 +774,7 @@ footer{
 }
 .lb-dot.on { background: var(--pink); transform: scale(1.4); }
 
-/* ── Responsive ── */
+/* Responsive */
 
 /* Tablet landscape / small desktop */
 @media (max-width: 1024px) {
